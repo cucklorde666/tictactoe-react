@@ -1,0 +1,71 @@
+/* Elements */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 1rem;
+}
+
+ol, ul {
+  padding-left: 1.5rem;
+}
+
+/* Utilities */
+.strong {
+  font-weight: 700;
+}
+
+/* Components. */
+.button--link {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 0.5rem;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  height: 2rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 2rem;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square--winner {
+  background: #767676;
+}
+
+.kbd-navigation .square:focus {
+  background: #767676;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 1.5rem;
+}
